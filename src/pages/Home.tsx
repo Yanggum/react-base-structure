@@ -15,14 +15,16 @@ const Home: React.FC = () => {
 
     return (
         <ErrorBoundary>
-            <h2>게시판 목록</h2>
-            <ul>
-                {/*{boards.items.map((board: any) => (*/}
-                {/*    <li key={board.id}>*/}
-                {/*        <a href={`/boards/${board.id}`}>{board.title}</a>*/}
-                {/*    </li>*/}
-                {/*))}*/}
-            </ul>
+            <div className={'container'}>
+                <h2>게시판 목록</h2>
+                <ul>
+                    {/*{boards.items.map((board: any) => (*/}
+                    {/*    <li key={board.id}>*/}
+                    {/*        <a href={`/boards/${board.id}`}>{board.title}</a>*/}
+                    {/*    </li>*/}
+                    {/*))}*/}
+                </ul>
+            </div>
         </ErrorBoundary>
     );
 };

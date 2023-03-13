@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import BoardDetail from "./pages/BoardDetail";
 import NotFound from "./pages/NotFound";
 import Switch from "react-switch";
-import "./assets/css/styles.scss";
+import "./App.scss";
 
 const App: React.FC = () => {
   const [checked, setChecked] = React.useState(false);
