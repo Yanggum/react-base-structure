@@ -1,0 +1,103 @@
+/* Typography */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Colors */
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+/* Buttons */
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+    border-color: darken($secondary-color, 10%);
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .nav-item {
+    a.nav-link {
+      color: #000;
+      &:hover {
+        color: $primary-color;
+      }
+      &.active {
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        color: #000;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
