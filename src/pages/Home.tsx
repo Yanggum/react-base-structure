@@ -7,29 +7,22 @@ const Home: React.FC = () => {
     const dispatch = useDispatch();
     const boards = useSelector((state: any) => state.board.boards);
 
-    useEffect(() => {
-        // @ts-ignore
-        dispatch(fetchBoard());
-    }, [dispatch]);
+    // TODO: dispatch 추가
+    // useEffect(() => {
+    //     // @ts-ignore
+    //     dispatch(fetchBoard());
+    // }, [dispatch]);
 
     return (
         <ErrorBoundary>
-            <div className="container">
-                <h2>게시판 목록</h2>
-                {boards.loading ? (
-                    <p>Loading...</p>
-                ) : boards.error ? (
-                    <p>{boards.error}</p>
-                ) : (
-                    <ul>
-                        {boards.items.map((board: any) => (
-                            <li key={board.id}>
-                                <a href={`/boards/${board.id}`}>{board.title}</a>
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </div>
+            <h2>게시판 목록</h2>
+            <ul>
+                {/*{boards.items.map((board: any) => (*/}
+                {/*    <li key={board.id}>*/}
+                {/*        <a href={`/boards/${board.id}`}>{board.title}</a>*/}
+                {/*    </li>*/}
+                {/*))}*/}
+            </ul>
         </ErrorBoundary>
     );
 };

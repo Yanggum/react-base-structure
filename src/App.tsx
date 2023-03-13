@@ -25,10 +25,10 @@ const App: React.FC = () => {
                   <div className="col-md-9">
                       <Switch checked={checked} onChange={() => setChecked(!checked)} />
                       <Routes>
-                          {/*<Route path="/" element={<Home />} />*/}
-                          <Route path="/" element={<div>
-                              asdfsfsdf
-                          </div>} />
+                          <Route path="/" element={<Home />} />
+                          {/*<Route path="/" element={<div>*/}
+                          {/*    asdfsfsdf*/}
+                          {/*</div>} />*/}
                           <Route path="/boards/:id" element={<BoardDetail match={{ params }}/>} />
                           <Route path="*" element={<NotFound />} />
                       </Routes>
